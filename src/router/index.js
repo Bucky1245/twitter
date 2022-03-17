@@ -1,6 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import Accueil from '../components/Accueil.vue'
+import Tweet from '../components/Tweet.vue'
+import Profile from '../components/Profile.vue'
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -13,6 +16,18 @@ const router = createRouter({
       path: '/accueil',
       name: 'accueil',
       component: Accueil
+    },
+    {
+      path: '/tweet/:tweetId',
+      name: 'tweet',
+      component: Tweet,
+      props: true
+    },
+    {
+      path: '/profile/:id',
+      name: 'profile',
+      component: Profile,
+      props: true
     },
     {
       path: '/about',
