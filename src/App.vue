@@ -15,6 +15,7 @@ import Accueil from '@/components/Accueil.vue'
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/accueil">Accueil</RouterLink>
+        <RouterLink to="/profile">Profile</RouterLink>
       </nav>
     </div>
   </header>
